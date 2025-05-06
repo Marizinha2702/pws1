@@ -1,0 +1,143 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000000;
+
+}
+
+/* Tipografia e base */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #cae4feee;
+  color: #1e2a38;
+  line-height: 1.6;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Cabeçalho e Navegação */
+.header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.6rem;
+  text-align: 90px;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #cce6ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+
+}
+
+.nav-link:hover {
+  color: #0b85ff;
+
+
+}
+
+/* Títulos */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #8bc5ff;
+  text-align: center;
+}
+
+h2 {
+  color: #005bb5;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-left: 4px solid #66b3ff;
+  padding-left: 10px;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 2.0rem;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #cce0f0;
+  padding-bottom: 5px;
+}
+/* Texto e links */
+.intro, .section {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-left: 5px solid #66b3ff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.section a,
+.intro a {
+  color: #005bb5;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.section a:hover,
+.intro a:hover {
+  color: #0080ff;
+}
+
+/* Rodapé */
+.footer {
+  color: #160342;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  padding: 20px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
